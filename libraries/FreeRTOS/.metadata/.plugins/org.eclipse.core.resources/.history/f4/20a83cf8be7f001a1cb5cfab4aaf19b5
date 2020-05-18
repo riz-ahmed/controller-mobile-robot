@@ -1,0 +1,47 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+
+#include "stm32f4xx.h"
+#include "FreeRTOS.h"
+#include "Task.h"
+			
+TaskFunction_t hTask1;
+TaskFunction_t hTask2;
+
+// Task -1 and Task - 2 function prototypes
+void handle_Task1 (*params);
+void handle_Task2 (*params);
+
+int main(void)
+{
+	// 1. Deinitialize SystemCoreClock settings (default) of FreeRTOS to make the sysclock run at 16MHz
+	RCC_DeInit();
+
+	SystemCoreClockUpdate();
+
+	// Create Task - 1
+	xTaskCreate(handle_Task1, "Task - 1", configMINIMAL_STACK_SIZE, NULL, 2, hTask1);
+
+	// Create Task - 2
+	xTaskCreate(handle_Task2, "Task - 2", configMINIMAL_STACK_SIZE, NULL, 2, hTask2);
+
+	for(;;);
+}
+
+// Create Task -1 function
+void handle_Task1 (*params){
+	while(1);
+}
+
+// Create Task -2 function
+void handle_Task2 (*params){
+	while(1);
+}
