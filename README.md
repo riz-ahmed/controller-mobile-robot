@@ -6,7 +6,7 @@ Drivers for SPI, USART and I2C were added initially before implementing CAN as t
 
 USART is mainly used for debugging, use the virtual terminal for checking the automated debug messages.
 
-<h2>Application developed on STM32 using HAL layer</h2>
+<h2>Applications developed on STM32 using HAL layer</h2>
 <ul>
   <li>Application to configure PLL clock settings</li>
   <li>Added voltage regulator API to enable higher clock speeds</li>
