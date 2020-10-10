@@ -6,19 +6,17 @@ Drivers for SPI, USART and I2C were added initially before implementing CAN as t
 
 USART is mainly used for debugging, use the virtual terminal for checking the automated debug messages.
 
-<h2>Applications developed on STM32 using HAL layer</h2>
-<ul>
-  <li>Application to configure PLL clock settings</li>
-  <li>Added voltage regulator API to enable higher clock speeds</li>
-  <li>Applcations deveioped for TIMER peripherals in Synchronous and Interrupt modes</li>
-  <li>Application for PWM peripherals, working LED's --> needs to be expanded to servo motors</li>
-  <li>Application developed for CAN peripheral both in Synchronous and Interrupt modes</li>
-</ul>
+# Applications developed on STM32 using HAL layer
 
-<h2>Applications developed for Ti controller</h2>
-<ul>
-  <li>Application to configure PLL clock settings</li>
-  <li>Application for PWM peripherals, for DC stepper motors</li>
-  <li>Application developed for DC motor controller for robotics applications</li>
-  <li>Application developed for Line Tracker, Wall Follower using Moore's Enginer</li>
-</ul>
+* Application to configure PLL clock settings
+* Added voltage regulator API to enable higher clock speeds
+* Applcations deveioped for TIMER peripherals in Synchronous and Interrupt modes
+* Application for PWM peripherals, working LED's --> needs to be expanded to servo motors
+* Application developed for CAN peripheral both in Synchronous and Interrupt modes
+
+# Applications developed for Ti controller
+
+* Application to configure PLL clock settings
+* Application for PWM peripherals, for DC stepper motors
+* Application developed for DC motor controller for robotics applications
+* Application developed for Line Tracker, Wall Follower using Moore's Enginer
