@@ -14,7 +14,7 @@ USART is mainly used for debugging, use the virtual terminal for checking the au
 * Application for PWM peripherals, working LED's --> needs to be expanded to servo motors
 * Application developed for CAN peripheral both in Synchronous and Interrupt modes
 
-# Applications developed for Ti controller
+# Applications developed on TM4CGH6PM micro-controller
 
 * Application to configure PLL clock settings
 * Application for PWM peripherals, for DC stepper motors
