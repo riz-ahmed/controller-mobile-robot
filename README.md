@@ -4,7 +4,7 @@ prototyping steering and propelling controls. A raspberry pi is planned to be us
 
 Drivers for SPI, USART and I2C were added initially before implementing CAN as the main communication protocol between multiple sensors for steering, lean angle and forward velocity.
 
-USART is mainly used for debugging, use the virtual terminal for checking the automated debug messages.
+USART is mainly used for debugging by using the virtual terminal for checking the automated debug messages.
 
 # Applications developed on STM32 using HAL layer
 
@@ -20,3 +20,4 @@ USART is mainly used for debugging, use the virtual terminal for checking the au
 * Application for PWM peripherals, for DC stepper motors
 * Application developed for DC motor controller for robotics applications
 * Application developed for Line Tracker, Wall Follower using Moore's Enginer
+* USART is developed for debugging messsaged to be read fromt the COM
